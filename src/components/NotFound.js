@@ -18,7 +18,7 @@ const NotFound = ({ darkMode }) => {
             />
             <h1 className="display-4">Page Not Found</h1>
             <p className="lead mb-4">Oops! The page you're looking for doesn't exist or has been moved.</p>
-            <Button variant="primary" onClick={() => navigate("/")}>
+            <Button className="back-button" variant="primary" onClick={() => navigate("/")}>
               Go Back Home
             </Button>
           </Col>
