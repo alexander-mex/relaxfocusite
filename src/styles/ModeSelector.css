@@ -1,0 +1,130 @@
+.card-selector {
+  background: none !important;
+}
+
+.mode-selector-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 3rem 2rem;
+  width: 90%;
+  max-width: 460px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.mode-selector-title {
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #2d2d2d;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.mode-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.mode-button {
+  width: 100%;
+  padding: 1rem !important;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+}
+
+.mode-button i {
+  font-size: 1.3rem;
+}
+
+.mode-button:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.mode-button:active {
+  transform: scale(0.98);
+}
+
+.mode-button.relax {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #2c3e50;
+}
+
+.mode-button.focus {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Dark Theme Support */
+body.dark-theme .mode-selector-content {
+  background: rgba(25, 25, 25, 0.7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .mode-selector-title {
+  color: #f5f5f5;
+}
+
+body.dark-theme .mode-button.relax {
+  background: linear-gradient(135deg, #6a8fce, #9ad1ea);
+  color: #222;
+}
+
+body.dark-theme .mode-button.focus {
+  background: linear-gradient(135deg, #d875e6, #e74c65);
+  color: white;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .mode-selector-content {
+    padding: 2rem 1.5rem;
+    max-width: 400px;
+  }
+
+  .mode-selector-title {
+    font-size: 1.6rem;
+  }
+
+  .mode-button {
+    font-size: 1.05rem;
+    padding: 1rem 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .mode-selector-content {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+
+  .mode-selector-title {
+    font-size: 1.4rem;
+  }
+
+  .mode-button {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+  }
+}

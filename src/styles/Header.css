@@ -1,0 +1,149 @@
+.rounded {
+  margin-top: 3rem;
+}
+
+/* Світла тема */
+.light-theme {
+  color: #212529;
+}
+
+.light-theme .bg-body-secondary {
+  background-color: #e9ecef !important;
+}
+
+.light-theme .btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.light-theme .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.light-theme .btn-outline-info {
+  color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.light-theme .btn-outline-info:hover {
+  background-color: #0dcaf0;
+  color: white;
+}
+
+.light-theme .btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.light-theme .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.light-theme .btn-outline-success {
+  color: #198754;
+  border-color: #198754;
+}
+
+.light-theme .btn-outline-success:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.light-theme .btn-outline-secondary {
+  border-color: #6c757d;
+}
+
+.light-theme .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.light-theme .text-nowrap {
+  color: #fff;
+}
+
+/* Темна тема */
+.dark-theme {
+  color: #f8f9fa;
+}
+
+.dark-theme .bg-body-secondary {
+  background-color: #2c3034 !important;
+}
+
+.dark-theme .btn-outline-primary {
+  color: #6ea8fe;
+  border-color: #6ea8fe;
+}
+
+.dark-theme .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.dark-theme .btn-outline-info {
+  color: #75bff0;
+  border-color: #75bff0;
+}
+
+.dark-theme .btn-outline-info:hover {
+  background-color: #0dcaf0;
+  color: white;
+}
+
+.dark-theme .btn-outline-danger {
+  color: #ea868f;
+  border-color: #ea868f;
+}
+
+.dark-theme .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.dark-theme .btn-outline-success {
+  border-color: #75b798;
+}
+
+.dark-theme .btn-outline-success:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.dark-theme .btn-outline-secondary {
+  border-color: #a7aeb5;
+}
+
+.dark-theme .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Медіа-запити для адаптації */
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+    justify-content: end;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-navbar-nav {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 50%;
+    margin: 0 auto !important;
+    background-color: #f8f9fa !important;
+    border-radius: 0 0 10px 10px !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .dark-theme #main-navbar-nav {
+    background-color: #2c3034 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  }
+}

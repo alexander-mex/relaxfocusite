@@ -1,0 +1,13 @@
+.canvas-container {
+  position: fixed; /* Змінити з relative на fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.canvas-animation {
+  width: 100%;
+  height: 100%;
+}

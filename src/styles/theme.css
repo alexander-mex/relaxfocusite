@@ -1,0 +1,97 @@
+/* Основні стилі для кнопки перемикача */
+#theme-toggle {
+  width: 60px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 30px;
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 1001;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для кульки перемикача */
+.toggle-ball {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateX(0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Стилі для іконок */
+.icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Стилі для сонця (світла тема) */
+.sun {
+  opacity: 1;
+}
+
+/* Стилі для місяця (темна тема) */
+.moon {
+  opacity: 0;
+}
+
+/* Темна тема - кнопка */
+body.dark-theme #theme-toggle {
+  background-color: #444;
+}
+
+/* Темна тема - кулька */
+body.dark-theme .toggle-ball {
+  transform: translateX(30px);
+  background-color: #333;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Темна тема - іконки */
+body.dark-theme .sun {
+  opacity: 0;
+}
+
+body.dark-theme .moon {
+  opacity: 1;
+}
+
+/* Додаткові ефекти при наведенні */
+#theme-toggle:hover {
+  background-color: #e0e0e0;
+}
+
+body.dark-theme #theme-toggle:hover {
+  background-color: #555;
+}
+
+#theme-toggle:hover .toggle-ball {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme #theme-toggle:hover .toggle-ball {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}

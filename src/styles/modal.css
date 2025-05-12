@@ -1,0 +1,122 @@
+.glass-modal .modal-content {
+  backdrop-filter: blur(20px) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 1rem !important;
+  box-shadow:
+    0 0 30px rgba(0, 255, 255, 0.2),
+    0 0 10px rgba(255, 255, 255, 0.1),
+    inset 0 0 5px rgba(255, 255, 255, 0.3) !important;
+  animation: glassFadeIn 0.7s ease forwards !important;
+  transform: translateY(40px) !important;
+  opacity: 0 !important;
+  color: #e0f7fa !important;
+}
+
+.glass-modal.show .modal-content {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+@keyframes glassFadeIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.glass-modal .modal-header {
+  border-bottom: none !important;
+  background: transparent !important;
+  color: #fff !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 1px !important;
+  text-shadow: 0 0 8px #0ff !important;
+}
+
+.glass-modal .modal-body {
+  background: transparent !important;
+  padding: 2rem !important;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+.glass-modal .modal-title {
+  text-transform: uppercase !important;
+}
+
+.glass-modal .btn-close {
+  color: #fff !important;
+  font-size: 1.5rem !important;
+  opacity: 0.7 !important;
+  filter: invert(1) !important;
+}
+
+.glass-modal .btn-close:hover {
+  opacity: 1 !important;
+  text-shadow: 0 0 10px #f0f !important;
+}
+
+.glass-modal .form-control {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0.5rem !important;
+  color: #fff !important;
+  margin-bottom: 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.glass-modal .form-control:focus {
+  box-shadow: 0 0 10px #00ffe7 !important;
+  border-color: #00ffe7 !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.glass-modal .btn-primary {
+  background: linear-gradient(135deg, #13ffe9, #3fa2ff) !important;
+  color: #000 !important;
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.5rem 1.25rem !important;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.glass-modal .btn-primary:hover {
+  box-shadow: 0 0 25px #00ffe7 !important;
+  transform: translateY(-2px) !important;
+}
+
+.glass-modal .modal-dialog {
+  display: flex !important;
+  align-items: center !important;
+  min-height: calc(100vh - 1rem) !important;
+  justify-content: center !important;
+}
+
+.glass-modal.fade .modal-dialog {
+  transform: translateY(-30px) !important;
+  transition: transform 0.3s ease-out !important;
+}
+
+.glass-modal.show .modal-dialog {
+  transform: translateY(0) !important;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+.modal-backdrop.fade {
+  opacity: 0 !important;
+}
+
+.modal-backdrop.show {
+  opacity: 1 !important;
+}
