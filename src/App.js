@@ -42,7 +42,7 @@ function App() {
       try {
         return JSON.parse(storedUserData);
       } catch (error) {
-        console.error("Помилка при розборі даних користувача з localStorage:", error);
+        console.error("Error parsing user data from localStorage:", error);
         return token ? { token } : null;
       }
     }
@@ -176,7 +176,7 @@ function App() {
   };
 
   if (loading) {
-    return <div className="loading-spinner">Завантаження...</div>
+    return <div className="loading-spinner">Loading...</div>
   }
 
   return (
@@ -184,7 +184,6 @@ function App() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} user={user} handleLogout={handleLogout} />
 
       <main className="main-content">
-        {/* Показуємо ModeSelector тільки для авторизованих користувачів */}
         {user && showModeSelector && !location.pathname.includes("/profile") && (
           <ModeSelector onSelectMode={handleSelectMode} />
         )}

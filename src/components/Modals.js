@@ -13,7 +13,6 @@ const Modals = ({ setUser, fetchUserProfile }) => {
   const [isRegistering, setIsRegistering] = useState(false)
   const [isLoggingIn, setIsLoggingIn] = useState(false)
 
-  // Initialize Bootstrap modals
   useEffect(() => {
     const loadBootstrap = async () => {
       if (typeof window !== "undefined" && typeof document !== "undefined") {
@@ -40,7 +39,6 @@ const Modals = ({ setUser, fetchUserProfile }) => {
         const backdrops = document.querySelectorAll(".modal-backdrop")
         backdrops.forEach((backdrop) => backdrop.remove())
 
-        // Clear fields after registration
         setRegisterEmail("")
         setRegisterPassword("")
         setConfirmPassword("")
