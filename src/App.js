@@ -1,6 +1,3 @@
-"use client"
-
-// src\App.js
 import { useState, useEffect, useCallback } from "react"
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom"
 import axios from "axios"
@@ -15,6 +12,7 @@ import FocusPage from "./components/FocusPage"
 import ProtectedRoute from "./components/ProtectedRoute"
 import ProfileSettings from "./components/ProfileSettings"
 import EmailConfirmed from "./components/EmailConfirmed"
+import NotFound from "./components/NotFound"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 import "./styles/modal.css"
@@ -229,6 +227,7 @@ function App() {
           />
           <Route path="/verify-email" element={<EmailConfirmed darkMode={darkMode} />} />
           <Route path="/email-verified" element={<EmailConfirmed darkMode={darkMode} />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 
