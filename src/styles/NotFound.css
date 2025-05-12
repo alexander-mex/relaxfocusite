@@ -1,6 +1,5 @@
 .not-found-wrapper {
   min-height: 100vh;
-  background-color: #f8f9fa;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -10,13 +9,19 @@
 }
 
 .not-found-wrapper.light-theme {
-  background-color: #ffffff;
   color: #212529;
 }
 
 .not-found-image {
   max-width: 300px;
   animation: float 2.5s ease-in-out infinite;
+}
+
+.back-button {
+  background: #34495e;
+  border: 1px solid #3d566e;
+  box-shadow: 0 2px 4px #0003;
+  color: #ecf0f1 !important;
 }
 
 @keyframes float {
