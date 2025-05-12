@@ -17,7 +17,7 @@
   animation: float 2.5s ease-in-out infinite;
 }
 
-.back-button {
+.dark-theme .back-button {
   background: #34495e;
   border: 1px solid #3d566e;
   box-shadow: 0 2px 4px #0003;
