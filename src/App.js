@@ -227,7 +227,7 @@ function App() {
           />
           <Route path="/verify-email" element={<EmailConfirmed darkMode={darkMode} />} />
           <Route path="/email-verified" element={<EmailConfirmed darkMode={darkMode} />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound darkMode={darkMode} />} />
         </Routes>
       </main>
 
